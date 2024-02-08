@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+  font-family: Manrope;
+  font-weight: 800;
+}
+.advice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: min(450px, 100%);
+  padding: 5rem;
+  border-radius: 2rem;
+  background-color: hsl(217, 19%, 24%);
+  position: relative;
+}
+#adviceID {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+}
+.advice {
+  font-size: 2.8rem;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+}
+.separator {
+  margin: 1rem 0;
+  width: 100%;
+  content: url(images/pattern-divider-desktop.svg);
+}
+#buttonDice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  body {
+    margin: 2rem;
+  }
+  .advice-container {
+    padding: 5rem;
+  }
+  .separator {
+    content: url(images/pattern-divider-mobile.svg);
+  }
+}
