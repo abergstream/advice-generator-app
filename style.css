@@ -56,6 +56,9 @@ body {
   transform: translate(-50%, 50%);
   cursor: pointer;
 }
+#buttonDice:hover {
+  box-shadow: 0 0 3.5rem hsl(150, 100%, 66%);
+}
 @media screen and (max-width: 800px) {
   body {
     margin: 2rem;
