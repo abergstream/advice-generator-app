@@ -64,9 +64,10 @@ body {
     margin: 2rem;
   }
   .advice-container {
-    padding: 5rem;
+    padding: 2rem;
   }
   .separator {
+    margin: 0 0 4rem;
     content: url(images/pattern-divider-mobile.svg);
   }
 }
